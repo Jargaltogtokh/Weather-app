@@ -23,6 +23,8 @@ export function Card({ cityName, value, temperature, condition, date }) {
       ? "/Snow.png"
       : condition?.includes("overcast")
       ? "/DayClouds.png"
+      : condition?.includes("cloud")
+      ? "/DayClouds.png"
       : condition?.includes("mist")
       ? "/DayClouds.png"
       : condition?.includes("wind")
@@ -45,7 +47,7 @@ export function Card({ cityName, value, temperature, condition, date }) {
   console.log(img);
   return (
     <div
-      className={`w-[414px] h-[868px] rounded-[78px] ${cardBackground} flex justify-center z-10 overflow-hidden`}
+      className={`w-[414px] h-[868px] rounded-[78px] ${cardBackground} flex justify-center z-10 `}
     >
       <div className={`w-[414px] h-[868px] bg-white rounded-[78px] ${color}`}>
         <div className={"mt-[56px] ml-[50px]"}>
@@ -68,7 +70,7 @@ export function Card({ cityName, value, temperature, condition, date }) {
           >
             {temperature}°
           </h1>
-          <h2 className="text-[24px] text-[#FF8E27] font-extrabold flex ">
+          <h2 className="text-[34px] text-[#FF8E27] font-extrabold flex ">
             {condition}
           </h2>
           <div className="flex mt-[40px] gap-16">
