@@ -84,7 +84,7 @@ export default function Home() {
         />
       </div>
       <div
-        className="w-[50%] h-screen  bg-stone-50 bg-[url('/subtract.png')] bg-no-repeat
+        className="w-[50%] h-screen  bg-stone-50 bg-[url('/Subtract.png')] bg-no-repeat
       flex flex-col-reverse items-center justify-between pb-[82px] rounded-3xl relative bg-cover bg-center"
       >
         <Card
