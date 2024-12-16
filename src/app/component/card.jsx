@@ -37,6 +37,8 @@ export function Card({ cityName, value, temperature, condition, date }) {
       ? "/NightSnow.png"
       : condition?.includes("cloud")
       ? "/NightClouds.png"
+      : condition?.includes("overcast")
+      ? "/NightClouds.png"
       : condition?.includes("thunder")
       ? "/NightThunder.png"
       : condition?.includes("wind")
